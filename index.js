@@ -1,18 +1,13 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+for(i=0; i<array.length; i++){
+  let comp = array.splice(0, 1); 
+  if(array.includes(target-comp)){
+    debugger;
+    return true;
+  }
 }
-
-/* 
-  Write the Big O time complexity of your function here
-*/
-
-/* 
-  Add your pseudocode here
-*/
-
-/*
-  Add written explanation of your solution here
-*/
+return false;
+}
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
